@@ -164,6 +164,7 @@
     font-size: clamp(20px, 2.5vw, 28px);
     font-weight: 100;
     line-height: 1.3;
+    text-transform: uppercase;
     margin: 0 0 var(--element-gap-vertical, clamp(12px, 2vw, 18px)) 0; 
     overflow-wrap: break-word;
     word-wrap: break-word;
