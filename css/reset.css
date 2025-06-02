@@ -1,6 +1,3 @@
-@import url('css/bespoke-serif.css');
-@import url('css/bespoke-sans.css');
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
