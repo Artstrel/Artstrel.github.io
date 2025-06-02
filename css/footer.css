@@ -1,0 +1,126 @@
+.site-footer {
+    background-color: #0a0a0a; 
+    color: var(--color-text-secondary, #ccc); 
+    padding: 3rem 1rem; 
+    border-top: 1px solid #222; 
+    
+    position: relative; 
+    box-sizing: border-box;
+    z-index: 50; 
+    clear: both; 
+    margin-top: auto; 
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none; 
+    min-height: 100px; 
+}
+
+.footer-content-wrapper {
+    width: var(--section-width, 95%);
+    max-width: var(--max-width-content, 1200px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 2rem; 
+}
+
+.footer-logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-text, #fff); 
+    letter-spacing: 1px;
+}
+
+.footer-social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.2rem; 
+}
+
+.footer-social-icons a {
+    color: var(--color-text-secondary, #ccc); 
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social-icons a:hover,
+.footer-social-icons a:focus {
+    color: var(--color-link, #87CEFA);
+    transform: scale(1.1);
+}
+
+.footer-social-icons svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1rem 1.5rem; 
+}
+
+.footer-links a {
+    color: var(--color-text-secondary, #ccc); 
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    color: var(--color-link, #87CEFA);
+    text-decoration: underline;
+}
+
+.footer-info {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary, #ccc); 
+}
+
+.footer-info p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .footer-content-wrapper {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+        text-align: left; 
+    }
+
+    .footer-logo-social {
+        align-items: flex-start; 
+    }
+
+    .footer-links {
+        justify-content: center; 
+        order: 2; 
+    }
+    .footer-info {
+        text-align: right; 
+        order: 3;
+    }
+}
+

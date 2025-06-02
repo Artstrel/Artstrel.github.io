@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RIOT - Японская кухня</title>
+    <meta name="description" content="EAT LOUD. LIVE RAW. Японская кухня с характером.">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=bespoke-sans@300,400,500,700&f[]=bespoke-serif@400,i400&display=swap">
+    
+    <link rel="stylesheet" href="css/reset.css">      
+    <link rel="stylesheet" href="css/nav.css">        
+    <link rel="stylesheet" href="css/hero.css">       
+    <link rel="stylesheet" href="css/about.css">      
+    <link rel="stylesheet" href="css/cards.css">      
+    <link rel="stylesheet" href="css/contact-map.css">
+    <link rel="stylesheet" href="css/form.css">       
+    <link rel="stylesheet" href="css/footer.css">     
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/nav.js" defer></script>
+    </head>
+<body>
+    <nav class="navbar">
+        <a href="Index.html" class="logo">RIOT</a>
+        <div class="nav-links">
+            <a href="Index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="form.html">Reservation</a>
+        </div>
+        <button class="hamburger-menu" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu-overlay">
+        <button class="close-menu-btn" aria-label="Закрыть меню">×</button>
+        <a href="Index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="form.html">Reservation</a>
+    </div>
+
+    <section class="hero-section">
+        <video autoplay loop muted playsinline class="section-background-video" poster="https://placehold.co/1920x1080/000000/333333?text=Hero+Video+Poster">
+            <source src="images/vecteezy_free-film-burn-animated-background_44456271(1).mp4" type="video/mp4" onerror="this.parentElement.alt='Не удалось загрузить фоновое видео для hero секции.'">
+            Your browser does not support the video tag.
+        </video>
+        <div class="section-video-overlay"></div>
+        <div class="hero-content-wrapper">
+            <div class="hero-main-content">
+                <h1 class="js-stylize-vowels text-reveal-mask animate-on-scroll fade-in">
+                    <span class="text-reveal-content">EAT LOUD. LIVE RAW.<br>JAPANESE CUISINE WITH ATTITUDE</span>
+                </h1>
+                <div class="button-container animate-on-scroll slide-up">
+                    <a href="#reserve" class="btn btn-primary">Reserve</a>
+                    <a href="menu.html" class="btn btn-secondary">Menu</a>
+                </div>
+                <img src="images/artstrel_Japanese_ramen_tonkotsu_ramen_Custom_variant_in_styl_f48348a4-c7fb-4749-bf8e-aff267b989b9_2.png" alt="Restaurant interior - desktop view" class="hero-image hero-image-desktop animate-on-scroll fade-in" onerror="this.src='https://placehold.co/1200x600/1a1a1a/444444?text=Image+not+available'; this.alt='Fallback: Restaurant interior - desktop view';">
+                <img src="images/artstrel_Japanese_ramen_tonkotsu_ramen_Custom_variant_in_styl_ba491cf5-aefc-4c93-8b39-0352a24d1ecc_0.png" alt="Restaurant interior - mobile view" class="hero-image hero-image-mobile animate-on-scroll fade-in" onerror="this.src='https://placehold.co/600x800/1a1a1a/444444?text=Image+not+available'; this.alt='Fallback: Restaurant interior - mobile view';">
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content-area"> 
+        <main class="vertical-sections-container">
+            <section id="about-us" class="section">
+                <video autoplay loop muted playsinline class="section-background-video" onerror="this.parentElement.alt='Не удалось загрузить фоновое видео для секции О нас.'">
+                    <source src="images/vecteezy_free-film-burn-animated-background_44456271(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="about-us-content">
+                    <img src="images/artstrel_funny_anime_character_eating_a_beautiful_gluten_free_47bb1aba-7684-4c39-80a9-2001c8127669_2.png" alt="Anime character eating ramen - left decor" class="about-decorative-img about-img-left animate-on-scroll slide-from-left" onerror="this.src='https://placehold.co/280x190/1a1a1a/444444?text=Image+1'; this.alt='Fallback: Anime character eating ramen - left decor';">
+                    <h1 class="about-us-main-title js-stylize-vowels text-reveal-mask animate-on-scroll fade-in">
+                        <span class="text-reveal-content">Story start`s here</span>
+                    </h1>
+                    <p class="about-us-text animate-on-scroll slide-up">We've crafted a unique dining experience where refined Japanese tradition collides with raw grunge energy. No pretense, no excess — just pure flavors and authentic expression.</p>
+                    <img src="images/artstrel_funny_anime_character_eating_a_beautiful_gluten_free_7df4bfbc-1f99-430d-8b61-77cc5bbd09cd_0.png" alt="Close-up of Japanese dish - right decor" class="about-decorative-img about-img-right animate-on-scroll slide-from-right" onerror="this.src='https://placehold.co/220x150/1a1a1a/444444?text=Image+2'; this.alt='Fallback: Close-up of Japanese dish - right decor';">
+                </div>
+            </section>
+
+            <section id="card-section-1" class="section sticky-card-section">
+                <video autoplay loop muted playsinline class="section-background-video" onerror="this.parentElement.alt='Не удалось загрузить фоновое видео для карточки 1.'">
+                     <source src="images/vecteezy_free-film-burn-animated-background_44456271(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="dish-card"> <div class="dish-card-content">
+                        <h2 class="dish-title js-stylize-vowels">Pure Culinary Artistry</h2>
+                        <p class="dish-description">Masterful dishes without decorations — flavor without facade, where every ingredient speaks for itself</p>
+                    </div>
+                    <div class="dish-card-image-wrapper">
+                        <img src="images/artstrel_A_black_and_white_manga-style_illustration_of_a_youn_4fb4f5c4-c9c5-432e-ad70-7ec6818ef1bf_1.png" alt="Manga-style illustration of a young chef with a dish" class="dish-card-image" onerror="this.src='https://placehold.co/750x420/1c1c1c/444444?text=Dish+1'; this.alt='Fallback: Manga-style illustration of a young chef with a dish';">
+                    </div>
+                </div>
+            </section>
+
+            <section id="card-section-2" class="section sticky-card-section">
+                <video autoplay loop muted playsinline class="section-background-video" onerror="this.parentElement.alt='Не удалось загрузить фоновое видео для карточки 2.'">
+                     <source src="images/vecteezy_free-film-burn-animated-background_44456271(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="dish-card">
+                    <div class="dish-card-content">
+                        <h2 class="dish-title js-stylize-vowels">Distinctive Atmosphere</h2>
+                        <p class="dish-description">Industrial design merged with Japanese simplicity creates an unforgettable dining environment</p>
+                    </div>
+                    <div class="dish-card-image-wrapper">
+                         <img src="images/artstrel_In_the_manga_style_there_is_an_empty_table_with_thre_a218f869-a0cd-4db3-8750-35cf58e7237c_3.png" alt="Manga-style illustration of an empty restaurant table" class="dish-card-image" onerror="this.src='https://placehold.co/750x420/1c1c1c/444444?text=Dish+2'; this.alt='Fallback: Manga-style illustration of an empty restaurant table';">
+                    </div>
+                </div>
+            </section>
+
+            <section id="card-section-3" class="section sticky-card-section">
+                 <video autoplay loop muted playsinline class="section-background-video" onerror="this.parentElement.alt='Не удалось загрузить фоновое видео для карточки 3.'">
+                     <source src="images/vecteezy_free-film-burn-animated-background_44456271(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="dish-card">
+                    <div class="dish-card-content">
+                        <h2 class="dish-title js-stylize-vowels">Premium Ingredients</h2>
+                        <p class="dish-description">Seasonal ingredients honored through traditional techniques, ensuring peak freshness and authentic taste</p>
+                    </div>
+                    <div class="dish-card-image-wrapper">
+                        <img src="images/artstrel_Overhead_shot_of_a_wooden_table_overflowing_with_an__601c5670-e835-42b4-ace9-3f09ba614cd5_0.png" alt="Overhead shot of a wooden table with Japanese dishes" class="dish-card-image" onerror="this.src='https://placehold.co/750x420/1c1c1c/444444?text=Dish+3'; this.alt='Fallback: Overhead shot of a wooden table with Japanese dishes';">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="full-vh-section contact-map-section">
+                <video autoplay loop muted playsinline class="section-background-video" poster="https://placehold.co/1920x1080/333333/666666?text=Contacts+Video" onerror="this.parentElement.alt='Не удалось загрузить фоновое видео для секции Контакты.'">
+                    <source src="images/vecteezy_free-film-burn-animated-background_44456271(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="section-video-overlay"></div>
+                <div class="contact-map-container animate-on-scroll fade-in">
+                    <div class="map-section">
+                        <div class="map-iframe-wrapper">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.210513677498!2d-73.98785368459303!3d40.75797497932697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6452691%3A0x7262444170d99615!2sTimes+Square!5e0!3m2!1sen!2sus!4v1500000000000"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Карта местоположения офиса">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <h2 class="main-title js-stylize-vowels text-reveal-mask animate-on-scroll"><span class="text-reveal-content">Get in touch</span></h2>
+                        <p class="short-description">
+                            Reach out with any questions — we're here to make your dining experience unforgettable
+                        </p>
+                        <div class="contact-details">
+                            <p class="address"><strong>Adress:</strong> <span class="italic-text">1057 Granville St</span></p>
+                            <p class="phone"><strong>Phone:</strong> <a href="tel:+10001234567">+1 (000) 123-45-67</a></p>
+
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <svg viewBox="0 0 24 24" role="img" aria-labelledby="instagramIconTitle"> <title id="instagramIconTitle">Instagram</title> <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                        <svg viewBox="0 0 24 24" role="img" aria-labelledby="facebookIconTitle"> <title id="facebookIconTitle">Facebook</title> <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H17L16.5,14H14V22H10V14H7V10H10V6.5C10,3.55 11.54,2 14.03,2H17Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                                        <svg viewBox="0 0 24 24" role="img" aria-labelledby="telegramIconTitle"> <title id="telegramIconTitle">Telegram</title> <path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.98-3.65l-2.25 2.15c-.23.22-.42.41-.83.41z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reserve" class="full-vh-section form-section">
+                <video autoplay loop muted playsinline class="section-background-video" poster="https://placehold.co/1920x1080/555555/888888?text=Form+Video" onerror="this.parentElement.alt='Не удалось загрузить фоновое видео для секции бронирования.'">
+                    <source src="images/vecteezy_free-film-burn-animated-background_44456271(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="section-video-overlay"></div>
+
+                <div class="container animate-on-scroll fade-in">
+                    <div class="two-col">
+                        <div class="left-column">
+                            <div class="header-wrapper">
+                                <h2 class="section-header js-stylize-vowels text-reveal-mask animate-on-scroll"><span class="text-reveal-content">Reserve Your Table</span></h2>
+                                <p class="section-description">
+                                    Book your culinary journey where Japanese precision meets grunge authenticity
+                                </p>
+                            </div>
+                            <img src="images/6c38bdfa-74da-40a3-9050-f9340f2e9225.png" alt="Restaurant interior for reservation form" onerror="this.onerror=null;this.src='https://placehold.co/800x600/333333/FFFFFF?text=Restaurant+Interior'; this.alt='Fallback: Restaurant interior for reservation form';">
+                        </div>
+                        <div class="right-column">
+                            <div class="form-container">
+                                <form id="reservationForm" novalidate>
+                                    <div class="form-fields-wrapper">
+                                        <div class="form-group">
+                                            <label for="name">Full Name</label>
+                                            <input type="text" id="name" name="name" required>
+                                            <div class="error-message" id="nameError">Пожалуйста, введите ваше имя.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number</label>
+                                            <input type="tel" id="phone" name="phone" required pattern="[0-9\s+-]{10,}" title="Please enter at least 10 digits for the phone number.">
+                                            <div class="error-message" id="phoneError">Пожалуйста, введите корректный номер телефона (минимум 10 цифр).</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="date">Date</label>
+                                            <input type="date" id="date" name="date" required>
+                                            <div class="error-message" id="dateError">Пожалуйста, выберите дату.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="time">Time</label>
+                                            <input type="time" id="time" name="time" required>
+                                            <div class="error-message" id="timeError">Пожалуйста, выберите время.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="guests">Number of Guests</label>
+                                            <div class="custom-select-wrapper" id="customGuestsSelectWrapper">
+                                                <div class="custom-select-trigger" tabindex="0">Select</div>
+                                                <div class="custom-options">
+                                                </div>
+                                            </div>
+                                            <select id="guests" name="guests" required>
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                            </select>
+                                            <div class="error-message" id="guestsError">Пожалуйста, укажите количество гостей.</div>
+                                        </div>
+                                        <div class="form-group table-selection-group">
+                                            <h3 class="form-title">Select Your Table(s)</h3>
+                                            <div class="table-grid">
+                                                <div class="table-item" data-id="table1" data-capacity="2">
+                                                    <div class="table-number">Table 1</div>
+                                                    <div class="table-capacity">2 persons</div>
+                                                </div>
+                                                <div class="table-item" data-id="table2" data-capacity="4">
+                                                    <div class="table-number">Table 2</div>
+                                                    <div class="table-capacity">4 persons</div>
+                                                </div>
+                                                <div class="table-item" data-id="table3" data-capacity="6">
+                                                    <div class="table-number">Table 3</div>
+                                                    <div class="table-capacity">6 persons</div>
+                                                </div>
+                                                <div class="table-item" data-id="table4" data-capacity="2">
+                                                    <div class="table-number">Table 4</div>
+                                                    <div class="table-capacity">2 persons</div>
+                                                </div>
+                                                <div class="table-item" data-id="table5" data-capacity="4">
+                                                    <div class="table-number">Table 5</div>
+                                                    <div class="table-capacity">4 persons</div>
+                                                </div>
+                                                <div class="table-item" data-id="table6" data-capacity="8">
+                                                    <div class="table-number">Table 6</div>
+                                                    <div class="table-capacity">8 persons</div>
+                                                </div>
+                                            </div>
+                                            <div class="error-message" id="tablesError">Please select at least one table suitable for the specified number of guests.</div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="submit-button" disabled>Reserve Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="success-popup" id="successPopup">
+                    <button class="close-popup-btn" id="closePopupBtn" aria-label="Close popup">&times;</button>
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" role="img" aria-labelledby="successIconTitle"><title id="successIconTitle">Success</title>
+                            <path d="M9,16.17L4.83,12l-1.42,1.41L9,19 21,7l-1.41-1.41L9,16.17z"/>
+                        </svg>
+                    </div>
+                    <div class="success-message">Reservation Confirmed!</div>
+                    <div class="success-submessage">We look forward to seeing you soon.</div>
+                </div>
+                <div class="popup-overlay" id="popupOverlay"></div>
+            </section>
+        </main>
+    </div> 
+    
+    <footer class="site-footer">
+        <div class="footer-content-wrapper">
+            <div class="footer-logo-social">
+                <a href="Index.html" class="footer-logo">RIOT</a>
+                <ul class="footer-social-icons">
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" role="img" aria-labelledby="footerInstagramIconTitle"> <title id="footerInstagramIconTitle">Instagram</title> <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" role="img" aria-labelledby="footerFacebookIconTitle"> <title id="footerFacebookIconTitle">Facebook</title> <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H17L16.5,14H14V22H10V14H7V10H10V6.5C10,3.55 11.54,2 14.03,2H17Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" role="img" aria-labelledby="footerTelegramIconTitle"> <title id="footerTelegramIconTitle">Telegram</title> <path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.98-3.65l-2.25 2.15c-.23.22-.42.41-.83.41z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <a href="Index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="form.html">Reservation</a>
+                <a href="#contacts">Contacts</a> 
+            </div>
+            <div class="footer-info">
+                <p>© 2025 RIOT. All rights reserved.</p>
+                <p>Design inspired by rebellion and boldness.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/card.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/font-styler.js" defer></script> 
+    <script>
+         document.addEventListener('DOMContentLoaded', function () {
+            const animatedTextElements = document.querySelectorAll('.text-reveal-mask.animate-on-scroll');
+            if (animatedTextElements.length > 0) {
+                const textObserverOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1 
+                };
+                const textObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, textObserverOptions);
+                animatedTextElements.forEach(el => textObserver.observe(el));
+            }
+        });
+    </script>
+</body>
+</html>

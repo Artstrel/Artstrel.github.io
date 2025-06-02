@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu - RIOT</title>
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=bespoke-sans@300,400,500,700,900&f[]=bespoke-serif@400,i400&display=swap">
+    
+    <link rel="stylesheet" href="css/reset.css"> <link rel="stylesheet" href="css/nav.css"> <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu.css"> <link rel="stylesheet" href="css/responsive.css"> <script src="js/nav.js" defer></script>
+    <script src="js/font-styler.js" defer></script> <script src="js/animations.js" defer></script> </head>
+<body>
+    <nav class="navbar">
+        <a href="Index.html" class="logo">RIOT</a>
+        <div class="nav-links">
+            <a href="Index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="Index.html#reserve">Reservation</a>
+        </div>
+        <button class="hamburger-menu" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu-overlay">
+        <button class="close-menu-btn" aria-label="Close menu">&times;</button>
+        <a href="Index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="form.html">Reservation</a>
+    </div>
+
+    <video autoplay muted loop id="background-video" class="section-background-video" poster="https://placehold.co/1920x1080/000000/333333?text=Menu+Video+Poster">
+        <source src="images/vecteezy_free-film-burn-animated-background_44456271(1).mp4" type="video/mp4" onerror="this.parentElement.alt='Не удалось загрузить фоновое видео для страницы меню.'">
+        Ваш браузер не поддерживает тег video.
+    </video>
+    <div class="section-video-overlay"></div>
+
+    <div class="menu-page-container">
+        <header class="menu-header-container animate-on-scroll fade-in">
+            <h1 class="main-title js-stylize-vowels text-reveal-mask">
+                <span class="text-reveal-content">MENU</span>
+            </h1>
+        </header>
+
+        <div class="menu-grid-container">
+            <section class="menu-section animate-on-scroll slide-up">
+                <h3 class="category-title js-stylize-vowels"><span class="category-icon">🌃</span>APPETIZERS</h3>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Black Gyoza "Silent Protest"</span>
+                        <span class="item-price">$12</span>
+                    </div>
+                    <p class="item-description">Dumplings with black dough (squid ink), pork filling with ginger and garlic. Served on a metal grill with smoking coals.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Yakitori "Caged Birds"</span>
+                        <span class="item-price">$14</span>
+                    </div>
+                    <p class="item-description">Chicken skewers in dark teriyaki sauce with black sesame. Served on worn metal plates with scratches.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Edamame "Green Routine"</span>
+                        <span class="item-price">$8</span>
+                    </div>
+                    <p class="item-description">Classic edamame beans with sea salt and wasabi powder, served in dented metal bowls.</p>
+                </div>
+            </section>
+
+            <section class="menu-section animate-on-scroll slide-up">
+                <h3 class="category-title js-stylize-vowels"><span class="category-icon">🍜</span>MAINS</h3>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Ramen "Skipped Classes"</span>
+                        <span class="item-price">$18</span>
+                    </div>
+                    <p class="item-description">Dark broth based on black garlic and miso, soft-boiled egg with black yolk, chashu, nori, green onion. Served in worn black ceramic.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Unagi Don "Sleeping Dragon"</span>
+                        <span class="item-price">$24</span>
+                    </div>
+                    <p class="item-description">Eel in dark kabayaki sauce on black rice (with bamboo charcoal), tobiko caviar, cucumber. In an old wooden box with metal rivets.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Sushi Set "Silent Warriors"</span>
+                        <span class="item-price">$28</span>
+                    </div>
+                    <p class="item-description">Signature sushi: tuna with black sesame, salmon with charcoal dust, tempura shrimp in black breading, unagi with metallic accents.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Soba "Grey Rains"</span>
+                        <span class="item-price">$16</span>
+                    </div>
+                    <p class="item-description">Black buckwheat noodles in cold broth, vegetable tempura, quail egg, wasabi. Served on a worn slate board.</p>
+                </div>
+            </section>
+
+            <section class="menu-section animate-on-scroll slide-up">
+                <h3 class="category-title js-stylize-vowels"><span class="category-icon">🥢</span>HOT DISHES</h3>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Okonomiyaki "Emotional Explosion"</span>
+                        <span class="item-price">$15</span>
+                    </div>
+                    <p class="item-description">Japanese pancake with seafood, cabbage and okonomiyaki sauce. Nori decoration in kanji characters, mayo served with careless strokes.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Tempura "Broken Dreams"</span>
+                        <span class="item-price">$17</span>
+                    </div>
+                    <p class="item-description">Vegetables in dark breading: eggplant, sweet potato, shiitake. Tentsuyu sauce with black vinegar in worn bowls.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Karaage "Clenched Fist"</span>
+                        <span class="item-price">$13</span>
+                    </div>
+                    <p class="item-description">Fried chicken in rough breading, marinated in soy sauce and sake. Served in a dented metal container.</p>
+                </div>
+            </section>
+
+            <section class="menu-section animate-on-scroll slide-up">
+                <h3 class="category-title js-stylize-vowels"><span class="category-icon">🍱</span>BENTO</h3>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Bento "After the Fight"</span>
+                        <span class="item-price">$19</span>
+                    </div>
+                    <p class="item-description">Black rice, chicken karaage, pickled vegetables, tamago egg, seaweed salad. In a worn metal lunch box.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Bento "Truant"</span>
+                        <span class="item-price">$22</span>
+                    </div>
+                    <p class="item-description">Teriyaki beef, black rice with sesame, kimchi, edamame, pickled daikon. In a box stylized as an old cassette player.</p>
+                </div>
+            </section>
+
+            <section class="menu-section animate-on-scroll slide-up">
+                <h3 class="category-title js-stylize-vowels"><span class="category-icon">🍨</span>DESSERTS</h3>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Ice Cream "Melancholia"</span>
+                        <span class="item-price">$9</span>
+                    </div>
+                    <p class="item-description">Black sesame ice cream with mochi pieces, served in a worn metal bowl with light smoke.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Dorayaki "Old Cassettes"</span>
+                        <span class="item-price">$7</span>
+                    </div>
+                    <p class="item-description">Pancakes filled with red bean anko, decorated with powdered sugar and chocolate scratches.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Mochi "Broken Hearts"</span>
+                        <span class="item-price">$8</span>
+                    </div>
+                    <p class="item-description">Irregularly shaped mochi with flavors: black sesame, green tea, purple sweet potato. Served on cracked ceramic.</p>
+                </div>
+            </section>
+
+            <section class="menu-section animate-on-scroll slide-up">
+                <h3 class="category-title js-stylize-vowels"><span class="category-icon">🍵</span>DRINKS</h3>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Tea "Green Silence"</span>
+                        <span class="item-price">$6</span>
+                    </div>
+                    <p class="item-description">Traditional matcha, whisked according to all rules, but served in cracked black ceramic.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Sake "Forgotten Samurai"</span>
+                        <span class="item-price">$10</span>
+                    </div>
+                    <p class="item-description">Heated sake in a worn metal tokkuri with light smoke for a gloomy atmosphere.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <span class="item-name">Ramune "Rebel's Soda"</span>
+                        <span class="item-price">$5</span>
+                    </div>
+                    <p class="item-description">Classic Japanese soda in matte bottles of dark shades.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content-wrapper">
+            <div class="footer-logo-social">
+                <a href="Index.html" class="footer-logo">RIOT</a>
+                <ul class="footer-social-icons">
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" role="img" aria-labelledby="footerInstagramIconTitle"> <title id="footerInstagramIconTitle">Instagram</title> <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" role="img" aria-labelledby="footerFacebookIconTitle"> <title id="footerFacebookIconTitle">Facebook</title> <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H17L16.5,14H14V22H10V14H7V10H10V6.5C10,3.55 11.54,2 14.03,2H17Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" role="img" aria-labelledby="footerTelegramIconTitle"> <title id="footerTelegramIconTitle">Telegram</title> <path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.98-3.65l-2.25 2.15c-.23.22-.42.41-.83.41z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <a href="Index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="form.html">Reservation</a>
+                <a href="#contacts">Contacts</a> 
+            </div>
+            <div class="footer-info">
+                <p>© <span id="currentYear"></span> RIOT. All rights reserved.</p>
+                <p>Design inspired by rebellion and boldness.</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+.about-us-content {
+    position: relative;
+    z-index: 2; 
+}
+
+.about-us-main-title { 
+    font-size: clamp(2.8em, 7vw, 4em); 
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin: 0 0 1.8rem 0;
+    color: var(--color-text, #fff);
+}
+
+.about-us-text { 
+    font-size: 1.05rem;
+    color: var(--color-text-secondary, #ccc);
+    line-height: 1.65;
+    max-width: 650px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 992px) { 
+    .about-us-main-title {
+        font-size: clamp(2.5em, 6vw, 3.5em);
+    }
+    .about-us-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-main-title {
+        font-size: clamp(2em, 7vw, 3em);
+    }
+    .about-us-text {
+        font-size: 0.95rem;
+    }
+}
