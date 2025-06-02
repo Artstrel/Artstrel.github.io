@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             span.textContent = vowel; 
             fragment.appendChild(span);
             
-            lastIndex = offset + vowel.length; 
+            lastIndex = offset + match.length; 
         });
         
         if (lastIndex < originalText.length) {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 node.parentNode.replaceChild(styledFragment, node);
             }
         } else if (node.nodeType === Node.ELEMENT_NODE) {
-            if (node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE' && !node.classList.contains('vowel-serif-italic')) {
+            if (node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE') {
                 Array.from(node.childNodes).forEach(processNode);
             }
         }
