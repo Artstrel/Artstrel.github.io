@@ -52,7 +52,7 @@ body > .section-video-overlay {
 
 .main-title { 
     font-family: 'Bespoke Sans', sans-serif;
-    font-size: clamp(2rem, 38vw, 35vh); 
+    font-size: clamp(2rem, 35vw, 35vh); 
     color: var(--color-text, #ffffff);
     padding: 0;
     font-weight: 900; 
@@ -160,12 +160,15 @@ body > .section-video-overlay {
 }
 
 @media (max-width: 549px) {
+    .main-title { 
+        font-size: clamp(2rem, 30vw, 35vh); 
+    }
     .menu-header-container {
         min-height: 80px; 
         margin-bottom: clamp(1.5rem, 4vh, 2rem);
     }
     .category-title {
-        font-size: clamp(1.4rem, 2.8vw, 1.8rem);
+        font-size: clamp(1.4rem, 2.2vw, 1.8rem);
     }
     .item-name {
         font-size: clamp(1rem, 1.8vw, 1.15rem);
