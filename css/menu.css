@@ -161,7 +161,7 @@ body > .section-video-overlay {
 
 @media (max-width: 549px) {
     .main-title { 
-        font-size: clamp(2rem, 30vw, 35vh); 
+        font-size: clamp(2rem, 30vw, 32vh); 
     }
     .menu-header-container {
         min-height: 80px; 
